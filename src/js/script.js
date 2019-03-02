@@ -20,6 +20,4 @@ $(document).ready(() => {
             $(headerElement).removeClass('small-header');
         }
     });
-    
-    $('body').css('padding-top', $(headerElement).height());
 });
