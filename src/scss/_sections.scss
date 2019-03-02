@@ -95,5 +95,75 @@ section {
                 }
             }
         }
+        .experience-items {
+            .experience-item {
+                padding: 2.5em;
+                border-bottom: 1px solid $gray-400;
+                text-align: center;
+                &:last-of-type {
+                    border-bottom: 0;
+                }
+                .item-title {
+                    text-transform: uppercase;
+                }
+                .item-subtitle {
+                    color: $primary;
+                    text-transform: uppercase;
+                }
+                .item-description {
+
+                }
+                .item-dates {
+                    span:not(.start):not(.end) {
+                        color: $secondary;
+                    }
+                    .end {
+                        color: $primary;
+                    }
+                }
+            }
+        }
+    }
+    &.education {
+        .education-title {
+            h2 {
+                text-transform: uppercase;
+                text-align: center;
+                font-size: $h1-font-size;
+                span {
+                    &:last-of-type {
+                        color: $primary;
+                    }
+                }
+            }
+        }
+        .education-items {
+            .education-item {
+                padding: 2.5em;
+                border-bottom: 1px solid $gray-400;
+                text-align: center;
+                &:last-of-type {
+                    border-bottom: 0;
+                }
+                .item-title {
+                    text-transform: uppercase;
+                }
+                .item-subtitle {
+                    color: $primary;
+                    text-transform: uppercase;
+                }
+                .item-description {
+
+                }
+                .item-dates {
+                    span:not(.start):not(.end) {
+                        color: $secondary;
+                    }
+                    .end {
+                        color: $primary;
+                    }
+                }
+            }
+        }
     }
 }
