@@ -11,7 +11,7 @@ $(document).ready(() => {
         }
     });
 
-    const headerElement = document.querySelector('header');
+    const headerElement = document.querySelector('.navbar');
     $(window).scroll(() => {
         if ($(window).scrollTop() > $(headerElement).height()) {
             $(headerElement).addClass('small-header');
@@ -20,4 +20,6 @@ $(document).ready(() => {
             $(headerElement).removeClass('small-header');
         }
     });
+    
+    $('body').css('padding-top', $(headerElement).height());
 });
