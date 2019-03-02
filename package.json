@@ -36,5 +36,8 @@
       "> 1%",
       "last 2 versions"
     ]
+  },
+  "dependencies": {
+    "eslint": "^5.15.0"
   }
 }
