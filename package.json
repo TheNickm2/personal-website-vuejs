@@ -4,7 +4,11 @@
   "description": "A personal website for Nick Mykkanen",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean": "rimraf ./dist && mkdir dist && rimraf ./temp && mkdir temp",
+    "compile": "babel src/js/script.js --presets=@babel/env | uglifyjs > dist/js/script.js && node-sass src/scss/style.scss ./temp/style.css --output-style compressed && postcss --use autoprefixer --no-map -o ./temp/style.css ./dist/css/style.compiled.css",
+    "prebuild": "npm run clean && cpx src/*.html dist/",
+    "build": "npm run compile",
+    "postbuild": "rimraf ./temp"
   },
   "repository": {
     "type": "git",
@@ -21,7 +25,16 @@
     "@babel/core": "^7.3.4",
     "@babel/preset-env": "^7.3.4",
     "autoprefixer": "^9.4.9",
+    "cpx": "^1.5.0",
     "node-sass": "^4.11.0",
-    "postcss": "^7.0.14"
+    "postcss": "^7.0.14",
+    "rimraf": "^2.6.3",
+    "uglifyjs": "^2.4.11"
+  },
+  "browserslist": {
+    "development": [
+      "> 1%",
+      "last 2 versions"
+    ]
   }
 }
