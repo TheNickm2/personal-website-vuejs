@@ -1,0 +1,27 @@
+{
+  "name": "nickmykkanen-personal-website",
+  "version": "1.0.0",
+  "description": "A personal website for Nick Mykkanen",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/nickmykkanen/personal-website.git"
+  },
+  "author": "Nick Mykkanen",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://gitlab.com/nickmykkanen/personal-website/issues"
+  },
+  "homepage": "https://gitlab.com/nickmykkanen/personal-website#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "autoprefixer": "^9.4.9",
+    "node-sass": "^4.11.0",
+    "postcss": "^7.0.14"
+  }
+}
