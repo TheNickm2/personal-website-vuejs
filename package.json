@@ -6,7 +6,7 @@
   "scripts": {
     "clean": "rimraf ./dist && rimraf ./temp && mkdir temp dist dist/js dist/css",
     "compile": "babel src/js/script.js --presets=@babel/env | uglifyjs > dist/js/script.js && node-sass src/scss/style.scss ./temp/style.css --output-style compressed && postcss --use autoprefixer --no-map -o ./dist/css/style.compiled.css ./temp/style.css",
-    "prebuild": "npm run clean && cp src/*.html dist/ && cp -r src/static/ dist/ && cp src/favicon.ico dist/favicon.ico",
+    "prebuild": "npm run clean && cp src/*.html dist/ && cp -r src/static/ dist/ && cp src/favicon.ico dist/favicon.ico && cp src/_redirects dist/_redirects",
     "build": "npm run compile",
     "postbuild": "rimraf ./temp"
   },
