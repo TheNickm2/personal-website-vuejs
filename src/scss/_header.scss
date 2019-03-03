@@ -1,0 +1,31 @@
+.navbar {
+    padding: {
+        top: 1.5em;
+        bottom: 1.5em;
+    }
+    transition: padding 0.25s ease-out;
+    .navbar-brand {
+        img {
+            width: 200px;
+            transition: width 0.25s ease-out;
+        }
+    }
+    .navbar-nav {
+        li {
+            a {
+                font-size: 1.25rem;
+            }
+        }
+    }
+    &.small-header {
+        padding: {
+            top: 0.75em;
+            bottom: 0.75em;
+        }
+        .navbar-brand {
+            img {
+                width: 150px;
+            }
+        }
+    }
+}

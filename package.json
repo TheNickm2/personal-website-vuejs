@@ -1,0 +1,43 @@
+{
+  "name": "nickmykkanen-personal-website",
+  "version": "1.0.0",
+  "description": "A personal website for Nick Mykkanen",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf ./dist && rimraf ./temp && mkdir temp dist dist/js dist/css",
+    "compile": "babel src/js/script.js --presets=@babel/env | uglifyjs > dist/js/script.js && node-sass src/scss/style.scss ./temp/style.css --output-style compressed && postcss --use autoprefixer --no-map -o ./dist/css/style.compiled.css ./temp/style.css",
+    "prebuild": "npm run clean && cp src/*.html dist/ && cp -r src/static/ dist/",
+    "build": "npm run compile",
+    "postbuild": "rimraf ./temp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/nickmykkanen/personal-website.git"
+  },
+  "author": "Nick Mykkanen",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://gitlab.com/nickmykkanen/personal-website/issues"
+  },
+  "homepage": "https://gitlab.com/nickmykkanen/personal-website#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "autoprefixer": "^9.4.9",
+    "cpx": "^1.5.0",
+    "eslint": "^5.15.0",
+    "node-sass": "^4.11.0",
+    "postcss": "^7.0.14",
+    "postcss-cli": "^6.1.2",
+    "rimraf": "^2.6.3",
+    "uglify-es": "^3.3.9"
+  },
+  "browserslist": {
+    "development": [
+      "> 1%",
+      "last 2 versions"
+    ]
+  },
+  "dependencies": {}
+}
