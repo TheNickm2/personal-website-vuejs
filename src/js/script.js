@@ -20,4 +20,10 @@ $(document).ready(() => {
             $(headerElement).removeClass('small-header');
         }
     });
+
+    $('.form-control').focus(function() {
+        if (!$(this).hasClass('hadFocus')) {
+            $(this).addClass('hadFocus');
+        }
+    });
 });
