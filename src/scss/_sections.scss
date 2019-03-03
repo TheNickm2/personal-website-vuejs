@@ -1,8 +1,21 @@
 section {
     padding-top: calc(3em + 79px);
     padding-bottom: calc(3em + 79px);
+    text-align: center;
     &:nth-of-type(2n+3) {
         background: $gray-300;
+    }
+    .section-title {
+        h2 {
+            text-transform: uppercase;
+            text-align: center;
+            font-size: $h1-font-size;
+            span {
+                &:last-of-type {
+                    color: $primary;
+                }
+            }
+        }
     }
     &.hero {
         background-color: $gray-800;
@@ -43,18 +56,6 @@ section {
         }
     }
     &.about {
-        .about-title {
-            h2 {
-                text-transform: uppercase;
-                text-align: center;
-                font-size: $h1-font-size;
-                span {
-                    &:last-of-type {
-                        color: $primary;
-                    }
-                }
-            }
-        }
         .contact-info {
             text-align: center;
             font-size: 1.5em;
@@ -83,18 +84,6 @@ section {
         }
     }
     &.experience {
-        .experience-title {
-            h2 {
-                text-transform: uppercase;
-                text-align: center;
-                font-size: $h1-font-size;
-                span {
-                    &:last-of-type {
-                        color: $primary;
-                    }
-                }
-            }
-        }
         .experience-items {
             .experience-item {
                 padding: 2.5em;
@@ -126,18 +115,6 @@ section {
         }
     }
     &.education {
-        .education-title {
-            h2 {
-                text-transform: uppercase;
-                text-align: center;
-                font-size: $h1-font-size;
-                span {
-                    &:last-of-type {
-                        color: $primary;
-                    }
-                }
-            }
-        }
         .education-items {
             .education-item {
                 padding: 2.5em;
