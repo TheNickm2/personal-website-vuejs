@@ -184,5 +184,8 @@ section {
     }
     &.contact {
         text-align: left;
+        .recaptcha {
+            margin-bottom: 1rem;
+        }
     }
 }

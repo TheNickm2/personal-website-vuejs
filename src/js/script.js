@@ -26,4 +26,10 @@ $(document).ready(() => {
             $(this).addClass('hadFocus');
         }
     });
+
+    $('.navbar-nav li a').click(() => {
+        if ($('.navbar-collapse').css('display') !== 'flex') {
+            $('.navbar-collapse').collapse('hide');
+        }
+    })
 });
