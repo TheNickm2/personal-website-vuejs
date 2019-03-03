@@ -181,6 +181,12 @@ section {
                 }
             }
         }
+        .additional-info {
+            ul {
+                max-width: 20rem;
+                text-align: left;
+            }
+        }
     }
     &.contact {
         text-align: left;
