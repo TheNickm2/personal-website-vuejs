@@ -1,6 +1,6 @@
 <template>
     <footer class="bg-dark">
-        <div class="copyright text-muted text-center">
+        <div class="copyright text-center">
             &copy; {{year}} Nick Mykkanen. <a href="https://gitlab.com/nickmykkanen/personal-website" target="_blank" rel="noreferrer">Fork me on <font-awesome-icon :icon="['fab', 'gitlab']"/> GitLab</a>
         </div>
     </footer>
@@ -29,6 +29,9 @@
 <style lang="scss">
     footer {
         padding: 1rem;
+        .copyright {
+            color: darken(#fff, 25%);
+        }
         a {
             color: #fff;
             &:hover {

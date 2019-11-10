@@ -53,7 +53,7 @@
                 text-align: center;
                 span {
                     &:last-of-type {
-                        color: lighten($primary, 5%);
+                        color: lighten($primary, 10%);
                     }
                 }
             }

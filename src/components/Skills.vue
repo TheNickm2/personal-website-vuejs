@@ -91,13 +91,13 @@ export default Vue.extend({
             text-transform: uppercase;
             &:not(.reverse) {
                 span:first-of-type {
-                    color: $primary;
+                    color: darken($primary, 10%);
                 }
             }
             &.reverse {
                 margin-top: 30px;
                 span:last-of-type {
-                    color: $primary;
+                    color: darken($primary, 10%);
                 }
             }
         }
@@ -116,7 +116,7 @@ export default Vue.extend({
                     }
                     &:hover {
                         svg {
-                            color: $primary;
+                            color: darken($primary, 10%);
                             opacity: 1;
                         }
                     }

@@ -36,7 +36,7 @@ export default Vue.extend({
             text-transform: uppercase;
         }
         .item-subtitle {
-            color: $primary;
+            color: darken($primary, 10%);
             text-transform: uppercase;
         }
         .item-dates {
@@ -46,7 +46,7 @@ export default Vue.extend({
                 color: $secondary;
             }
             .end {
-                color: $primary;
+                color: darken($primary, 10%);
             }
         }
     }
