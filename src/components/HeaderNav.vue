@@ -1,22 +1,20 @@
 <template>
-    <header>
-        <b-navbar toggleable="md" type="dark" sticky="true" class="bg-dark" v-bind:class="{ 'small-header': smallHeader }">
-            <div class="container">
-                <b-navbar-brand v-scroll-to="'#page-top'" href="#page-top"><img src="../assets/img/nickmykkanen.svg" alt="Nick Mykkanen Logo" class="img-fluid"></b-navbar-brand>
-                <b-navbar-toggle target="primaryNavigation"></b-navbar-toggle>
-                <b-collapse id="primaryNavigation" is-nav>
-                    <b-navbar-nav class="ml-auto" v-b-scrollspy>
-                        <b-nav-item v-scroll-to="'#about'" href="#about">About</b-nav-item>
-                        <b-nav-item v-scroll-to="'#experience'" href="#experience">Experience</b-nav-item>
-                        <b-nav-item v-scroll-to="'#education'" href="#education">Education</b-nav-item>
-                        <b-nav-item v-scroll-to="'#skills'" href="#skills">Skills</b-nav-item>
-                        <b-nav-item v-scroll-to="'#interests'" href="#interests">Interests</b-nav-item>
-                        <b-nav-item v-scroll-to="'#contact'" href="#contact">Contact</b-nav-item>
-                    </b-navbar-nav>
-                </b-collapse>
-            </div>
-        </b-navbar>
-    </header>
+    <b-navbar toggleable="md" type="dark" sticky="true" class="bg-dark" v-bind:class="{ 'small-header': smallHeader }">
+        <div class="container">
+            <b-navbar-brand v-scroll-to="'#page-top'" href="#page-top"><img src="../assets/img/nickmykkanen.svg" alt="Nick Mykkanen Logo" class="img-fluid"></b-navbar-brand>
+            <b-navbar-toggle target="primaryNavigation"></b-navbar-toggle>
+            <b-collapse id="primaryNavigation" is-nav>
+                <b-navbar-nav class="ml-auto" v-b-scrollspy>
+                    <b-nav-item v-scroll-to="'#about'" href="#about">About</b-nav-item>
+                    <b-nav-item v-scroll-to="'#experience'" href="#experience">Experience</b-nav-item>
+                    <b-nav-item v-scroll-to="'#education'" href="#education">Education</b-nav-item>
+                    <b-nav-item v-scroll-to="'#skills'" href="#skills">Skills</b-nav-item>
+                    <b-nav-item v-scroll-to="'#interests'" href="#interests">Interests</b-nav-item>
+                    <b-nav-item v-scroll-to="'#contact'" href="#contact">Contact</b-nav-item>
+                </b-navbar-nav>
+            </b-collapse>
+        </div>
+    </b-navbar>
 </template>
 
 <script lang="ts">
@@ -54,38 +52,36 @@
 <style lang="scss">
 @import '../assets/scss/variables';
 @import '../../node_modules/bootstrap/scss/bootstrap.scss';
-header {
-    .navbar {
-        padding: {
-            top: 1.5em !important;
-            bottom: 1.5em !important;
+.navbar {
+    padding: {
+        top: 1.5em !important;
+        bottom: 1.5em !important;
+    }
+    transition: padding 0.25s ease-out;
+    &.bg-dark.sticky-top.navbar-dark.navbar-expand-md {
+        background-color: darken($primary, 25%) !important;
+    }
+    .navbar-brand {
+        img {
+            width: 200px;
+            transition: width 0.25s ease-out;
         }
-        transition: padding 0.25s ease-out;
-        &.bg-dark.sticky-top.navbar-dark.navbar-expand-md {
-            background-color: darken($primary, 25%) !important;
+    }
+    .navbar-nav {
+        li {
+            a {
+                font-size: 1.25rem;
+            }
+        }
+    }
+    &.small-header {
+        padding: {
+            top: 0.75em !important;
+            bottom: 0.75em !important;
         }
         .navbar-brand {
             img {
-                width: 200px;
-                transition: width 0.25s ease-out;
-            }
-        }
-        .navbar-nav {
-            li {
-                a {
-                    font-size: 1.25rem;
-                }
-            }
-        }
-        &.small-header {
-            padding: {
-                top: 0.75em !important;
-                bottom: 0.75em !important;
-            }
-            .navbar-brand {
-                img {
-                    width: 150px;
-                }
+                width: 150px;
             }
         }
     }
