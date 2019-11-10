@@ -1,0 +1,40 @@
+{
+  "name": "nickmykkanen-personal-website",
+  "version": "2.0.0",
+  "description": "A personal website for Nick Mykkanen",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/nickmykkanen/personal-website.git"
+  },
+  "author": "Nick Mykkanen",
+  "license": "GPL-3.0-or-later",
+  "bugs": {
+    "url": "https://gitlab.com/nickmykkanen/personal-website/issues"
+  },
+  "homepage": "https://gitlab.com/nickmykkanen/personal-website#readme",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "core-js": "^3.3.2",
+    "register-service-worker": "^1.6.2",
+    "vue": "^2.6.10"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^4.0.0",
+    "@vue/cli-plugin-eslint": "^4.0.0",
+    "@vue/cli-plugin-pwa": "^4.0.0",
+    "@vue/cli-plugin-typescript": "^4.0.0",
+    "@vue/cli-service": "^4.0.0",
+    "@vue/eslint-config-typescript": "^4.0.0",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^8.0.0",
+    "typescript": "~3.5.3",
+    "vue-template-compiler": "^2.6.10"
+  }
+}
