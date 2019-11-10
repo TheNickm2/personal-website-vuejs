@@ -1,4 +1,4 @@
-# personal-website
+# Nick Mykkanen's Personal Website
 
 ## Project setup
 ```
@@ -19,6 +19,3 @@ npm run build
 ```
 npm run lint
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
