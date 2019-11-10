@@ -27,12 +27,17 @@
 </script>
 
 <style lang="scss">
+@import '../assets/scss/variables';
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
 .navbar {
     padding: {
         top: 1.5em !important;
         bottom: 1.5em !important;
     }
     transition: padding 0.25s ease-out;
+    &.bg-dark.sticky-top.navbar-dark.navbar-expand-md {
+        background-color: darken($primary, 25%) !important;
+    }
     .navbar-brand {
         img {
             width: 200px;

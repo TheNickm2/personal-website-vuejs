@@ -10,9 +10,7 @@
                     <span>Mykkanen</span>
                 </h1>
             </div>
-            <div class="separator light">
-                <font-awesome-icon :icon="['fas', 'star']" />
-            </div>
+            <Separator light="true"></Separator>
             <div class="title">
                 <h2>Website Developer</h2>
             </div>
@@ -22,8 +20,11 @@
 
 <script lang="ts">
     import Vue from 'vue';
+    import Separator from './utilities/Separator.vue';
     export default Vue.extend({
-        
+        components: {
+            Separator
+        }
     });
 </script>
 
