@@ -78,7 +78,7 @@ export default Vue.extend({
         }
         .social-icons {
             text-align: center;
-            font-size: $h2-font-size;
+            font-size: 2rem;
             ul {
                 list-style-type: none;
                 padding: 0;

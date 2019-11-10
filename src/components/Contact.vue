@@ -110,7 +110,7 @@
                 border-radius: 0;
                 border-bottom: 3px solid $primary;
                 &.hadFocus:not(:valid):not(:focus) {
-                    border-color: $danger;
+                    border-color: #dc3545;
                 }
             }
         }

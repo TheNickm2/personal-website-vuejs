@@ -1,5 +1,5 @@
 <template>
-    <b-navbar toggleable="md" type="dark" :sticky="true" class="bg-dark" v-bind:class="{ 'small-header': smallHeader }">
+    <b-navbar toggleable="md" type="dark" fixed="top" class="bg-dark" v-bind:class="{ 'small-header': smallHeader }">
         <div class="container">
             <b-navbar-brand v-scroll-to="'#page-top'" href="#page-top"><img src="../assets/img/nickmykkanen.svg" alt="Nick Mykkanen Logo" class="img-fluid"></b-navbar-brand>
             <b-navbar-toggle target="primaryNavigation"></b-navbar-toggle>
@@ -56,7 +56,7 @@
             bottom: 1.5em !important;
         }
         transition: padding 0.25s ease-out;
-        &.bg-dark.sticky-top.navbar-dark.navbar-expand-md {
+        &.bg-dark {
             background-color: darken($primary, 25%) !important;
         }
         .navbar-brand {

@@ -30,8 +30,9 @@
 
 <style lang="scss">
     .hero {
-        background-color: $gray-800;
+        background-color: #343a40;
         color: rgba(#fff, 0.8);
+        padding-top: calc(3em + 197px);
         .photo {
             width: 200px;
             height: 200px;

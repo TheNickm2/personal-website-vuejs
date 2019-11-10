@@ -27,7 +27,7 @@ export default Vue.extend({
 <style lang="scss">
     .experience-item {
         padding: 2.5em;
-        border-bottom: 1px solid $gray-400;
+        border-bottom: 1px solid #ced4da;
         text-align: center;
         &:last-of-type {
             border-bottom: 0;
@@ -41,6 +41,7 @@ export default Vue.extend({
         }
         .item-dates {
             text-transform: uppercase;
+            font-weight: 500;
             span:not(.start):not(.end) {
                 color: $secondary;
             }

@@ -26,7 +26,7 @@
             width: 25%;
             max-width: 150px;
             height: 3px;
-            background-color: $gray-900;
+            background-color: #212529;
         }
         &::before {
             left: 50%;

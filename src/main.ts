@@ -6,6 +6,12 @@ import './registerServiceWorker';
 
 // BootstrapVue
 import BootstrapVue from 'bootstrap-vue';
+import 'bootstrap/scss/bootstrap.scss'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
+
+// Base CSS
+import './assets/scss/_variables.scss';
+import './assets/scss/_shared.scss';
 
 // FontAwesome Icons
 import { library } from '@fortawesome/fontawesome-svg-core';
