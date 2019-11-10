@@ -1,29 +1,46 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
-  </div>
+    <div id="app">
+        <HeaderNav/>
+        <Hero/>
+        <About/>
+        <Experience/>
+        <Education/>
+        <Skills/>
+        <Interests/>
+        <Contact/>
+        <Footer/>
+    </div>
 </template>
 
 <script lang="ts">
-import Vue from 'vue';
-import HelloWorld from './components/HelloWorld.vue';
+    import Vue from "vue";
 
-export default Vue.extend({
-  name: 'app',
-  components: {
-    HelloWorld
-  }
-});
+    // Import individual section components
+    import HeaderNav from './components/HeaderNav.vue';
+    import Hero from './components/Hero.vue';
+    import About from './components/About.vue';
+    import Experience from './components/Experience.vue';
+    import Education from './components/Education.vue';
+    import Skills from './components/Skills.vue';
+    import Interests from './components/Interests.vue';
+    import Contact from './components/Contact.vue';
+    import Footer from './components/Footer.vue';
+
+    export default Vue.extend({
+        name: "app",
+        components: {
+            HeaderNav,
+            Hero,
+            About,
+            Experience,
+            Education,
+            Skills,
+            Interests,
+            Contact,
+            Footer
+        }
+    });
 </script>
 
 <style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 </style>
