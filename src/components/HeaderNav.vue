@@ -1,10 +1,10 @@
 <template>
-    <b-navbar toggleable="md" type="dark" sticky="true" class="bg-dark">
+    <b-navbar toggleable="md" type="dark" sticky="true" class="bg-dark" v-bind:class="{ 'small-header': smallHeader }">
         <div class="container">
             <b-navbar-brand v-scroll-to="'#page-top'" href="#page-top"><img src="../assets/img/nickmykkanen.svg" alt="Nick Mykkanen Logo" class="img-fluid"></b-navbar-brand>
             <b-navbar-toggle target="primaryNavigation"></b-navbar-toggle>
             <b-collapse id="primaryNavigation" is-nav>
-                <b-navbar-nav class="ml-auto">
+                <b-navbar-nav class="ml-auto" v-b-scrollspy>
                     <b-nav-item v-scroll-to="'#about'" href="#about">About</b-nav-item>
                     <b-nav-item v-scroll-to="'#experience'" href="#experience">Experience</b-nav-item>
                     <b-nav-item v-scroll-to="'#education'" href="#education">Education</b-nav-item>
@@ -22,7 +22,30 @@
     var VueScrollTo = require('vue-scrollto');
     Vue.use(VueScrollTo);
     export default Vue.extend({
-        
+        data () {
+            return {
+                smallHeader: false
+            }
+        },
+        methods: {
+            handleScroll (event: Event) {
+                const headerElem = document.querySelector('.navbar.navbar-dark') as HTMLElement;
+                if (headerElem) {
+                    if (window.scrollY > headerElem.offsetHeight) {
+                        this.smallHeader = true;
+                    }
+                    else {
+                        this.smallHeader = false;
+                    }
+                }
+            }
+        },
+        created: function () {
+            window.addEventListener('scroll', this.handleScroll);
+        },
+        destroyed: function () {
+            window.removeEventListener('scroll', this.handleScroll);
+        }
     });
 </script>
 
