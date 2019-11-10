@@ -7,5 +7,17 @@ module.exports = {
                 `
             }
         }
+    },
+    pwa: {
+        name: 'Nick Mykkanen',
+        workboxOptions: {
+            exclude: [
+                /\.map$/,
+                /img\/icons\//,
+                /favicon\.ico$/,
+                /^manifest.*\.js?$/,
+                /^_redirects/
+            ]
+        }
     }
 };
