@@ -10,7 +10,7 @@
                     <span>Mykkanen</span>
                 </h1>
             </div>
-            <Separator light="true"></Separator>
+            <Separator :light="true"></Separator>
             <div class="title">
                 <h2>Website Developer</h2>
             </div>

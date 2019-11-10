@@ -1,5 +1,5 @@
 <template>
-    <b-navbar toggleable="md" type="dark" sticky="true" class="bg-dark" v-bind:class="{ 'small-header': smallHeader }">
+    <b-navbar toggleable="md" type="dark" :sticky="true" class="bg-dark" v-bind:class="{ 'small-header': smallHeader }">
         <div class="container">
             <b-navbar-brand v-scroll-to="'#page-top'" href="#page-top"><img src="../assets/img/nickmykkanen.svg" alt="Nick Mykkanen Logo" class="img-fluid"></b-navbar-brand>
             <b-navbar-toggle target="primaryNavigation"></b-navbar-toggle>
