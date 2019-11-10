@@ -1,9 +1,9 @@
 <template>
     <b-navbar toggleable="md" type="dark" fixed="top" class="bg-dark" v-bind:class="{ 'small-header': smallHeader }">
         <div class="container">
-            <b-navbar-brand v-scroll-to="'#page-top'" href="#page-top"><img src="../assets/img/nickmykkanen.svg" alt="Nick Mykkanen Logo" class="img-fluid"></b-navbar-brand>
+            <b-navbar-brand @click="scrollTop" v-scroll-to="'#page-top'" href="#page-top"><img src="../assets/img/nickmykkanen.svg" alt="Nick Mykkanen Logo" class="img-fluid"></b-navbar-brand>
             <b-navbar-toggle target="primaryNavigation"></b-navbar-toggle>
-            <b-collapse id="primaryNavigation" is-nav>
+            <b-collapse ref="primaryNavigation" id="primaryNavigation" is-nav>
                 <b-navbar-nav class="ml-auto" v-b-scrollspy>
                     <b-nav-item v-scroll-to="'#about'" href="#about">About</b-nav-item>
                     <b-nav-item v-scroll-to="'#experience'" href="#experience">Experience</b-nav-item>
@@ -38,6 +38,16 @@
                         this.smallHeader = false;
                     }
                 }
+            },
+            scrollTop () {
+                const primeNav = document.querySelector('#primaryNavigation');
+                if (primeNav) {
+                    const classList = primeNav.getAttribute('class');
+                    if (classList && classList.indexOf('show') !== -1) {
+                        const primeNavRef = this.$refs.primaryNavigation as any;
+                        primeNavRef.toggle();
+                    }
+                }
             }
         },
         created: function () {
@@ -68,7 +78,7 @@
         .navbar-nav {
             li {
                 a {
-                    font-size: 1.25rem;
+                    font-size: 1.15rem;
                 }
             }
         }
