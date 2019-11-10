@@ -86,7 +86,6 @@ export default Vue.extend({
 </script>
 
 <style lang="scss">
-    @import '../assets/scss/variables';
     .skills {
         .section-subtitle {
             text-transform: uppercase;

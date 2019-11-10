@@ -43,8 +43,6 @@
 </script>
 
 <style lang="scss">
-    @import '../assets/scss/variables';
-    @import '../../node_modules/bootstrap/scss/bootstrap.scss';
     .contact {
         text-align: left;
         .recaptcha {

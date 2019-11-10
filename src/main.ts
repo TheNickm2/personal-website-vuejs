@@ -1,9 +1,6 @@
 import Vue from 'vue';
 import App from './App.vue';
 
-// Custom scss
-import './assets/scss/main.scss'
-
 // PWA Script
 import './registerServiceWorker';
 

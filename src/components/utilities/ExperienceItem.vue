@@ -25,8 +25,6 @@ export default Vue.extend({
 </script>
 
 <style lang="scss">
-    @import '../../assets/scss/variables';
-    @import '../../../node_modules/bootstrap/scss/bootstrap.scss';
     .experience-item {
         padding: 2.5em;
         border-bottom: 1px solid $gray-400;

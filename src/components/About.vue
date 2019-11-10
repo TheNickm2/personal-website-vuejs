@@ -65,33 +65,32 @@ export default Vue.extend({
 </script>
 
 <style lang="scss">
-@import '../../node_modules/bootstrap/scss/bootstrap.scss';
-.about {
-    .contact-info {
-        text-align: center;
-        font-size: 1.5em;
-    }
-    .about-content {
-        p {
-            font-size: 1.2em;
+    .about {
+        .contact-info {
             text-align: center;
+            font-size: 1.5em;
         }
-    }
-    .social-icons {
-        text-align: center;
-        font-size: $h2-font-size;
-        ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-            li {
-                display: inline-block;
-                padding: {
-                    left: 0.5em;
-                    right: 0.5em;;
+        .about-content {
+            p {
+                font-size: 1.2em;
+                text-align: center;
+            }
+        }
+        .social-icons {
+            text-align: center;
+            font-size: $h2-font-size;
+            ul {
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+                li {
+                    display: inline-block;
+                    padding: {
+                        left: 0.5em;
+                        right: 0.5em;;
+                    }
                 }
             }
         }
     }
-}
 </style>
