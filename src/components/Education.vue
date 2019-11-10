@@ -3,7 +3,7 @@
         <div class="container">
             <div class="section-title">
                 <h2>
-                    <span>My</span>
+                    <span>My </span>
                     <span>Education</span>
                 </h2>
             </div>
