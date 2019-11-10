@@ -1,5 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu+Condensed|Ubuntu:400,400i,700,700i&display=swap');
+@import 'variables';
 @import '../../../node_modules/bootstrap/scss/bootstrap';
 @import '../../../node_modules/bootstrap-vue/src/index.scss';
 
-@import 'variables';
+section {
+    padding-top: calc(3em + 79px);
+    padding-bottom: calc(3em + 79px);
+    text-align: center;
+    &:nth-of-type(2n+3) {
+        background: $gray-300;
+    }
+    .section-title {
+        h2 {
+            text-transform: uppercase;
+            text-align: center;
+            font-size: $h1-font-size;
+            span {
+                &:last-of-type {
+                    color: $primary;
+                }
+            }
+        }
+    }
+}
 
+.separator {
+    text-align: center;
+    margin-bottom: 1.5em;
+    margin-top: 1.5em;
+    position: relative;
+    &::before, &::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        width: 25%;
+        max-width: 150px;
+        height: 3px;
+        background-color: $gray-900;
+    }
+    &::before {
+        left: 50%;
+        transform: translate(-125%, -50%);
+    }
+    &::after {
+        right: 50%;
+        transform: translate(125%, -50%);
+    }
+    svg {
+        font-size: 2em;
+    }
+    &.light {
+        &::before, &::after {
+            background-color: rgba(#fff, 0.8);
+        }
+    }
+}

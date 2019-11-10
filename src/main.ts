@@ -12,12 +12,12 @@ import BootstrapVue from 'bootstrap-vue';
 
 // FontAwesome Icons
 import { library } from '@fortawesome/fontawesome-svg-core';
-import { faUserSecret } from '@fortawesome/free-solid-svg-icons';
-import { faFontAwesome } from '@fortawesome/free-brands-svg-icons';
+import { faStar, faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faLinkedin, faGitlab, faGithub, faFacebookF, faTelegramPlane, faHtml5, faCss3, faSass, faJs, faWordpressSimple, faReact, faVuejs, faNodeJs, faNpm, faGulp, faYarn, faGit, faJira, faAdobe, faLinux } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
-library.add(faUserSecret);
-library.add(faFontAwesome);
+library.add(faStar, faEnvelope, faPhone);
+library.add(faLinkedin, faGitlab, faGithub, faFacebookF, faTelegramPlane, faHtml5, faCss3, faSass, faJs, faWordpressSimple, faReact, faVuejs, faNodeJs, faNpm, faGulp, faYarn, faGit, faJira, faAdobe, faLinux);
 
 Vue.component('font-awesome-icon', FontAwesomeIcon);
 
