@@ -1,15 +1,8 @@
 {
   "name": "nickmykkanen-personal-website",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "A personal website for Nick Mykkanen",
-  "main": "index.js",
-  "scripts": {
-    "clean": "rimraf ./dist && rimraf ./temp && mkdir temp dist dist/js dist/css",
-    "compile": "babel src/js/script.js --presets=@babel/env | uglifyjs > dist/js/script.js && node-sass src/scss/style.scss ./temp/style.css --output-style compressed && postcss --use autoprefixer --no-map -o ./dist/css/style.compiled.css ./temp/style.css",
-    "prebuild": "npm run clean && cp src/*.html dist/ && cp -r src/static/ dist/ && cp src/favicon.ico dist/favicon.ico && cp src/_redirects dist/_redirects",
-    "build": "npm run compile",
-    "postbuild": "rimraf ./temp"
-  },
+  "private": true,
   "repository": {
     "type": "git",
     "url": "git+ssh://git@gitlab.com/nickmykkanen/personal-website.git"
@@ -20,24 +13,36 @@
     "url": "https://gitlab.com/nickmykkanen/personal-website/issues"
   },
   "homepage": "https://gitlab.com/nickmykkanen/personal-website#readme",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.25",
+    "@fortawesome/free-brands-svg-icons": "^5.11.2",
+    "@fortawesome/free-regular-svg-icons": "^5.11.2",
+    "@fortawesome/free-solid-svg-icons": "^5.11.2",
+    "@fortawesome/vue-fontawesome": "^0.1.8",
+    "bootstrap": "^4.3.1",
+    "bootstrap-vue": "^2.0.4",
+    "core-js": "^3.3.2",
+    "register-service-worker": "^1.6.2",
+    "vue": "^2.6.10",
+    "vue-scrollto": "^2.17.1"
+  },
   "devDependencies": {
-    "@babel/cli": "^7.2.3",
-    "@babel/core": "^7.3.4",
-    "@babel/preset-env": "^7.3.4",
-    "autoprefixer": "^9.4.9",
-    "cpx": "^1.5.0",
-    "eslint": "^5.15.0",
-    "node-sass": "^4.11.0",
-    "postcss": "^7.0.14",
-    "postcss-cli": "^6.1.2",
-    "rimraf": "^2.6.3",
-    "uglify-es": "^3.3.9"
-  },
-  "browserslist": {
-    "development": [
-      "> 1%",
-      "last 2 versions"
-    ]
-  },
-  "dependencies": {}
+    "@vue/cli-plugin-babel": "^4.0.0",
+    "@vue/cli-plugin-eslint": "^4.0.0",
+    "@vue/cli-plugin-pwa": "^4.0.0",
+    "@vue/cli-plugin-typescript": "^4.0.0",
+    "@vue/cli-service": "^4.0.0",
+    "@vue/eslint-config-typescript": "^4.0.0",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.0.0",
+    "node-sass": "^4.12.0",
+    "sass-loader": "^8.0.0",
+    "typescript": "~3.5.3",
+    "vue-template-compiler": "^2.6.10"
+  }
 }
