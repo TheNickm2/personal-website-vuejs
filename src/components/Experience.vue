@@ -28,7 +28,7 @@
                     experienceSubtitle="ARI Network Services"
                     description="Building out client websites on a proprietary web platform, per specifications provided by a Website Implementation Specialist. A few months after starting this position, moved to the Website Research &amp; Development team. On this team, researched new features and functionality that can be brought to the proprietary platform by the website development team."
                     startDate="October 2017"
-                    endDate="February 2918"
+                    endDate="February 2018"
                 />
                 <ExperienceItem
                     experienceTitle="Website Implementation Specialist"
