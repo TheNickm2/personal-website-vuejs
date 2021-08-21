@@ -14,37 +14,27 @@
             <div class="social-icons">
                 <ul>
                     <li>
-                        <a href="https://www.linkedin.com/in/nick-mykkanen/" title="LinkedIn" target="_blank" rel="noreferrer">
+                        <a href="https://www.linkedin.com/in/nick-mykkanen/" v-b-tooltip.hover title="LinkedIn" target="_blank" rel="noreferrer">
                             <font-awesome-icon :icon="['fab', 'linkedin-in']" />
                         </a>
                     </li>
                     <li>
-                        <a href="https://gitlab.com/nickmykkanen" title="GitLab" target="_blank" rel="noreferrer">
+                        <a href="https://gitlab.com/nickmykkanen" v-b-tooltip.hover title="GitLab" target="_blank" rel="noreferrer">
                             <font-awesome-icon :icon="['fab', 'gitlab']"/>
                         </a>
                     </li>
                     <li>
-                        <a href="https://github.com/TheNickm2" title="GitHub" target="_blank" rel="noreferrer">
+                        <a href="https://github.com/TheNickm2" v-b-tooltip.hover title="GitHub" target="_blank" rel="noreferrer">
                             <font-awesome-icon :icon="['fab', 'github']"/>
                         </a>
                     </li>
                     <li>
-                        <a href="https://www.facebook.com/nickmykkanen" title="Facebook" target="_blank" rel="noreferrer">
-                            <font-awesome-icon :icon="['fab', 'facebook-f']"/>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="https://t.me/nickmykkanen" title="Telegram" target="_blank" rel="noreferrer">
-                            <font-awesome-icon :icon="['fab', 'telegram-plane']"/>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="mailto:nick@nickm.dev" title="Email">
+                        <a href="mailto:nick@nickm.dev" v-b-tooltip.hover title="Email">
                             <font-awesome-icon :icon="['fas', 'envelope']"/>
                         </a>
                     </li>
                     <li>
-                        <a href="tel:(218) 451-2008" title="Phone">
+                        <a href="tel:(218) 451-2008" v-b-tooltip.hover title="Phone">
                             <font-awesome-icon :icon="['fas', 'phone']"></font-awesome-icon>
                         </a>
                     </li>

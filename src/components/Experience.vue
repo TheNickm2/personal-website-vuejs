@@ -14,7 +14,7 @@
                     experienceSubtitle="Fasetto"
                     description="Working on corporate websites as changes and updates are required. Redesigning websites to align with corporate branding. Working on front-end interface of Fasetto's primary (web-based) software products using various technologies."
                     startDate="May 2019"
-                    endDate="Present"
+                    endDate="August 2021"
                 />
                 <ExperienceItem
                     experienceTitle="Senior Web Developer"

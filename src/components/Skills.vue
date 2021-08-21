@@ -15,49 +15,49 @@
             </div>
             <div class="skill-list">
                 <ul>
-                    <li title="HTML5">
+                    <li v-b-tooltip.hover title="HTML5">
                         <font-awesome-icon :icon="['fab', 'html5']"/>
                     </li>
-                    <li title="CSS3">
+                    <li v-b-tooltip.hover title="CSS3">
                         <font-awesome-icon :icon="['fab', 'css3']"/>
                     </li>
-                    <li title="Sass">
+                    <li v-b-tooltip.hover title="Sass">
                         <font-awesome-icon :icon="['fab', 'sass']"/>
                     </li>
-                    <li title="JavaScript + ECMAScript 2018 and TypeScript">
+                    <li v-b-tooltip.hover title="JavaScript and TypeScript">
                         <font-awesome-icon :icon="['fab', 'js']"/>
                     </li>
-                    <li title="WordPress">
+                    <li v-b-tooltip.hover title="WordPress">
                         <font-awesome-icon :icon="['fab', 'wordpress-simple']"/>
                     </li>
-                    <li title="React JS">
+                    <li v-b-tooltip.hover title="React JS">
                         <font-awesome-icon :icon="['fab', 'react']"/>
                     </li>
-                    <li title="Vue JS">
+                    <li v-b-tooltip.hover title="Vue JS">
                         <font-awesome-icon :icon="['fab', 'vuejs']"/>
                     </li>
-                    <li title="Node JS">
+                    <li v-b-tooltip.hover title="Node JS">
                         <font-awesome-icon :icon="['fab', 'node-js']"/>
                     </li>
-                    <li title="NPM">
+                    <li v-b-tooltip.hover title="Python">
+                        <font-awesome-icon :icon="['fab', 'python']"/>
+                    </li>
+                    <li v-b-tooltip.hover title="NPM">
                         <font-awesome-icon :icon="['fab', 'npm']"/>
                     </li>
-                    <li title="Gulp">
-                        <font-awesome-icon :icon="['fab', 'gulp']"/>
-                    </li>
-                    <li title="Yarn">
+                    <li v-b-tooltip.hover title="Yarn">
                         <font-awesome-icon :icon="['fab', 'yarn']"/>
                     </li>
-                    <li title="Git">
+                    <li v-b-tooltip.hover title="Git">
                         <font-awesome-icon :icon="['fab', 'git']"/>
                     </li>
-                    <li title="Jira">
+                    <li v-b-tooltip.hover title="Jira">
                         <font-awesome-icon :icon="['fab', 'jira']"/>
                     </li>
-                    <li title="Adobe Creative Cloud">
+                    <li v-b-tooltip.hover title="Adobe Creative Cloud">
                         <font-awesome-icon :icon="['fab', 'adobe']"/>
                     </li>
-                    <li title="Linux">
+                    <li v-b-tooltip.hover title="Linux">
                         <font-awesome-icon :icon="['fab', 'linux']"/>
                     </li>
                 </ul>
