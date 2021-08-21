@@ -19,7 +19,7 @@
                 <ExperienceItem
                     experienceTitle="Senior Web Developer"
                     experienceSubtitle="ARI Network Services"
-                    description="Continuing to work with the Website R&amp;D team as a lead developer. Lead the team with ideas and execute on those ideas in a timely fashion. Continue prodiving new features and functionality for websites using the proprietary platform, and ensure that sites are using modern technologies and design practices."
+                    description="Continuing to work with the Website R&amp;D team as a lead developer. Lead the team with ideas and execute on those ideas in a timely fashion. Continue providing new features and functionality for websites using the proprietary platform and ensure that sites are using modern technologies and design practices."
                     startDate="March 2019"
                     endDate="May 2019"
                 />
