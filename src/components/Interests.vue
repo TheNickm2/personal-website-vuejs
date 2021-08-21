@@ -8,7 +8,7 @@
                 </h2>
             </div>
             <div class="section-info">
-                <p>Outside of work, I'm an all-around tech enthusiast. I love experimenting with new technologies and devices. When I'm not enjoying the tech lifestyle, I like to play games with my friends and family. On a night in, I like to watch action and comedy movies, and am particularly interested in superhero movies.</p>
+                <p>Outside of work, I'm an all-around tech enthusiast. I love experimenting with new technologies and devices. When I'm not enjoying the tech lifestyle, I like to play games with my friends and family. On a night in, I like to watch action and comedy movies, and am particularly interested in superhero movies. I'm also very involved in the Elder Scrolls Online MMO, and have even written a few addons for the game!</p>
             </div>
         </div>
     </section>

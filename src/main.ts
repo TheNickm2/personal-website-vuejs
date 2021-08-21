@@ -16,11 +16,11 @@ import './assets/scss/_shared.scss';
 // FontAwesome Icons
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faStar, faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons';
-import { faLinkedinIn, faGitlab, faGithub, faFacebookF, faTelegramPlane, faHtml5, faCss3, faSass, faJs, faWordpressSimple, faReact, faVuejs, faNodeJs, faNpm, faGulp, faYarn, faGit, faJira, faAdobe, faLinux } from '@fortawesome/free-brands-svg-icons';
+import { faLinkedinIn, faGitlab, faGithub, faFacebookF, faTelegramPlane, faHtml5, faCss3, faSass, faJs, faWordpressSimple, faReact, faVuejs, faNodeJs, faNpm, faGulp, faYarn, faGit, faJira, faAdobe, faLinux, faPython } from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
 library.add(faStar, faEnvelope, faPhone);
-library.add(faLinkedinIn, faGitlab, faGithub, faFacebookF, faTelegramPlane, faHtml5, faCss3, faSass, faJs, faWordpressSimple, faReact, faVuejs, faNodeJs, faNpm, faGulp, faYarn, faGit, faJira, faAdobe, faLinux);
+library.add(faLinkedinIn, faGitlab, faGithub, faFacebookF, faTelegramPlane, faHtml5, faCss3, faSass, faJs, faWordpressSimple, faReact, faVuejs, faNodeJs, faNpm, faGulp, faYarn, faGit, faJira, faAdobe, faLinux, faPython);
 
 Vue.component('font-awesome-icon', FontAwesomeIcon);
 
