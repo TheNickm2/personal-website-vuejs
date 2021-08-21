@@ -43,8 +43,4 @@
 </script>
 
 <style lang="scss">
-    // Fix slight white line between tooltop title & "arrow"
-    .bs-tooltip-top .arrow, .bs-tooltip-auto[x-placement^="top"] .arrow {
-        bottom: 1px !important;
-    }
 </style>

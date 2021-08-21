@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500|Ubuntu+Condensed&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Oxygen:wght@400;700&display=swap');
 
 section {
     padding-top: calc(3em + 79px);
@@ -19,4 +19,9 @@ section {
             }
         }
     }
+}
+
+// Fix slight white line between tooltop title & "arrow"
+.bs-tooltip-top .arrow, .bs-tooltip-auto[x-placement^="top"] .arrow {
+    bottom: 1px !important; // unfortunate but necessary
 }
