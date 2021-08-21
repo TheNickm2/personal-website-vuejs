@@ -24,7 +24,7 @@
                         </a>
                     </li>
                     <li>
-                        <a href="https://github.com/nickmykkanen" title="GitHub" target="_blank" rel="noreferrer">
+                        <a href="https://github.com/TheNickm2" title="GitHub" target="_blank" rel="noreferrer">
                             <font-awesome-icon :icon="['fab', 'github']"/>
                         </a>
                     </li>
