@@ -9,18 +9,15 @@
 <script lang="ts">
     import Vue from 'vue';
     export default Vue.extend({
-        data () {
-            return {
-                year: ""
-            }
-        },
-        mounted () {
-            const year = new Date().getFullYear();
-            if (year > 2019) {
-                this.year = `2019 - ${year}`;
-            }
-            else {
-                this.year = "2019";
+        computed: {
+            year: function () {
+                const year = new Date().getFullYear();
+                if (year > 2019) {
+                    return `2019 - ${year}`;
+                }
+                else {
+                    return "2019";
+                }
             }
         }
     });
