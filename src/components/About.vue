@@ -14,32 +14,32 @@
             <div class="social-icons">
                 <ul>
                     <li>
-                        <a href="https://www.linkedin.com/in/nick-mykkanen/" v-b-tooltip.click title="LinkedIn" target="_blank" rel="noreferrer">
+                        <a href="https://www.linkedin.com/in/nick-mykkanen/" v-b-tooltip title="LinkedIn" target="_blank" rel="noreferrer">
                             <font-awesome-icon :icon="['fab', 'linkedin-in']" />
                         </a>
                     </li>
                     <li>
-                        <a href="https://gitlab.com/nickmykkanen" v-b-tooltip.hover title="GitLab" target="_blank" rel="noreferrer">
+                        <a href="https://gitlab.com/nickmykkanen" v-b-tooltip title="GitLab" target="_blank" rel="noreferrer">
                             <font-awesome-icon :icon="['fab', 'gitlab']"/>
                         </a>
                     </li>
                     <li>
-                        <a href="https://github.com/TheNickm2" v-b-tooltip.hover title="GitHub" target="_blank" rel="noreferrer">
+                        <a href="https://github.com/TheNickm2" v-b-tooltip title="GitHub" target="_blank" rel="noreferrer">
                             <font-awesome-icon :icon="['fab', 'github']"/>
                         </a>
                     </li>
                     <li>
-                        <a href="https://my.indeed.com/p/nicholasm-csaviyi" v-b-tooltip.hover title="Resume (Indeed)" target="_blank" rel="noreferrer">
+                        <a href="https://my.indeed.com/p/nicholasm-csaviyi" v-b-tooltip title="Resume (Indeed)" target="_blank" rel="noreferrer">
                             <font-awesome-icon :icon="['fas', 'address-card']"/>
                         </a>
                     </li>
                     <li>
-                        <a href="mailto:nick@nickm.dev" v-b-tooltip.hover title="Email">
+                        <a href="mailto:nick@nickm.dev" v-b-tooltip title="Email">
                             <font-awesome-icon :icon="['fas', 'envelope']"/>
                         </a>
                     </li>
                     <li>
-                        <a href="tel:(218) 451-2008" v-b-tooltip.hover title="Phone">
+                        <a href="tel:(218) 451-2008" v-b-tooltip title="Phone">
                             <font-awesome-icon :icon="['fas', 'phone']"></font-awesome-icon>
                         </a>
                     </li>
