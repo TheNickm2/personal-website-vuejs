@@ -14,7 +14,7 @@
             <div class="social-icons">
                 <ul>
                     <li>
-                        <a href="https://www.linkedin.com/in/nick-mykkanen/" v-b-tooltip.hover title="LinkedIn" target="_blank" rel="noreferrer">
+                        <a href="https://www.linkedin.com/in/nick-mykkanen/" v-b-tooltip.click title="LinkedIn" target="_blank" rel="noreferrer">
                             <font-awesome-icon :icon="['fab', 'linkedin-in']" />
                         </a>
                     </li>
@@ -26,6 +26,11 @@
                     <li>
                         <a href="https://github.com/TheNickm2" v-b-tooltip.hover title="GitHub" target="_blank" rel="noreferrer">
                             <font-awesome-icon :icon="['fab', 'github']"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://my.indeed.com/p/nicholasm-csaviyi" v-b-tooltip.hover title="Resume (Indeed)" target="_blank" rel="noreferrer">
+                            <font-awesome-icon :icon="['fas', 'address-card']"/>
                         </a>
                     </li>
                     <li>
