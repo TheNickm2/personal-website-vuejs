@@ -12,7 +12,7 @@
                 <ExperienceItem
                     experienceTitle="Front End Developer"
                     experienceSubtitle="VividFront"
-                    description="Building websites and creating new functionality for clients, primarily focusing on Next.js and React. Additionally, building out client websites using custom Shopify Online Store 2.0 Liquid themes. Cross-functional team communication and collaboration to ensure that the best possible product is delivered to the client."
+                    description="Building websites and creating new functionality for clients, primarily focusing on Next.js and React. Using headless CMS and Shopify storefront GraphQL APIs to create custom storefronts and react-based web apps. Additionally building out client websites using custom Shopify Online Store 2.0 Liquid themes. Cross-functional team communication and collaboration to ensure that the best possible product is delivered to the client. "
                     startDate="January 2022"
                     endDate="May 2024"
                 />
